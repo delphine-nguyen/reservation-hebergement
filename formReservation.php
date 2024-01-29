@@ -23,12 +23,12 @@
 		<form action="./bookRoom.php" method="post">
 			<article class="colorOnSecondaryBg">
 				<label for="name" class="mainFont">Nom</label>
-				<input type="text" name="name" class="mainFont" />
+				<input type="text" name="name" class="mainFont" value="Dupont" />
 			</article>
 
 			<article class="colorOnSecondaryBg">
 				<label for="firstname" class="mainFont">Prénom</label>
-				<input type="text" name="firstname" class="mainFont" />
+				<input type="text" name="firstname" class="mainFont" value="Jean" />
 			</article>
 
 			<article class="colorOnSecondaryBg">
@@ -38,7 +38,7 @@
 
 			<article class="colorOnSecondaryBg">
 				<label for="refSession" class="mainFont">Numéro de session de formation</label>
-				<input type="number" name="refSession" class="mainFont" />
+				<input type="number" name="refSession" class="mainFont" value="123456" />
 			</article>
 
 			<article class="colorOnSecondaryBg">
