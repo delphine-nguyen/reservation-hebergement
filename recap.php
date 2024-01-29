@@ -10,43 +10,44 @@
     <title>Réservation</title>
 </head>
 
-<body>
+<body class="secondaryCologBg">
     <?php session_start(); ?>
-    <header>
+    <header class="mainColorBg">
         <?php include("./header.php"); ?>
-        <h1>Récapitulatif de la réservation n°<?php echo $_SESSION["refReservation"] ?></h1>
+        <h2 class="mainFont">Récapitulatif de la réservation n°<?php echo $_SESSION["refReservation"] ?></h2>
     </header>
     <main>
 
         <section id="recap">
-            <article>
+            <article class="mainFont">
                 <p>Nom</p>
                 <p><?php echo $_SESSION["name"]; ?></p>
             </article>
-            <article>
+            <article class="mainFont">
                 <p>Prénom</p>
                 <p><?php echo $_SESSION["firstname"]; ?></p>
             </article>
-            <article>
+            <article class="mainFont">
                 <p>Date de naissance</p>
                 <p><?php echo $_SESSION["birthday"]; ?></p>
             </article>
-            <article>
+            <article class="mainFont">
                 <p>Numéro de session de formation</p>
                 <p><?php echo $_SESSION["refSession"]; ?></p>
             </article>
-            <article>
+            <article class="mainFont">
                 <p>Date d'arrivée</p>
                 <p><?php echo $_SESSION["arrivalDate"]; ?></p>
             </article>
-            <article>
+            <article class="mainFont">
                 <p>Date de départ</p>
                 <p><?php echo $_SESSION["departureDate"]; ?></p>
             </article>
-            <article>
+            <article class="mainFont">
                 <p>Type de logement</p>
                 <p><?php echo $_SESSION["typeApt"]; ?></p>
             </article>
         </section>
     </main>
+    <footer class="mainColorBg mainFont">---</footer>
 </body>
