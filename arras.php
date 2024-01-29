@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<?php include("./header.php"); ?>
-		<h1>Centre d'Arras</h1>
+		<h2>Centre d'Arras</h2>
 	</header>
 
 	<main>

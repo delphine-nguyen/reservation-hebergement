@@ -14,7 +14,7 @@
 <body>
 	<header>
 		<?php include("./header.php"); ?>
-		<h1>Centre de Roubaix</h1>
+		<h2>Centre de Roubaix</h2>
 	</header>
 	<main>
 		<?php include("./formReservation.php"); ?>
