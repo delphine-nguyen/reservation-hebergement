@@ -26,10 +26,12 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content: center;
 	align-items: center;
 
 	width: 60vw;
-	margin: 50px auto;
+	margin: 20px auto;
+	margin-top: 100px;
 }
 
 /* Titles */
@@ -37,8 +39,22 @@ main {
 h1 {
 	font-size: 100px;
 	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
 
 	padding: 20px;
+}
+
+h2 {
+	font-size: 80px;
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.titleCover {
+	position: relative;
+	bottom: 300px;
+	margin-bottom: -150px;
 }
 
 /* Img */
@@ -59,4 +75,10 @@ footer {
 	align-items: center;
 
 	padding: 5px;
+}
+
+/* Colors */
+
+.textOnLightBg {
+	color: black;
 }

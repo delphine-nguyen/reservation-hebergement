@@ -1,0 +1,22 @@
+/* Form */
+
+form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.searchBarBig > input,
+.searchBarBig > button {
+	font-size: 30px;
+}
+
+.searchBarBig {
+	padding: 50px;
+}
+
+/* Img */
+
+.cover {
+	height: 400px;
+	width: 100%;
+}

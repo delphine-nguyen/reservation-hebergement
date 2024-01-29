@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/theme.css">
     <title>Réservation</title>
 </head>
@@ -12,11 +13,13 @@
 <body>
     <header>
         <?php include("./header.php"); ?>
-        <h1>Réserver une chambre</h1>
+        <img src="./assets/img/cover.jpeg" alt="AFPA de Roubaix" class="cover">
+        <h1 class="titleCover textOnLightBg">AFPA</h1>
     </header>
 
     <main>
-        <form action="./findCenter.php" method="get">
+        <h2>Réserver une chambre</h2>
+        <form action="./findCenter.php" method="get" class="searchBarBig">
             <input type="text" name="nameCenter">
             <button type="submit">Rechercher</button>
         </form>
