@@ -19,8 +19,17 @@
 	<main>
 		<?php
 		session_start();
-		$_SESSION["centerName"] = "roubaix";
+		$_SESSION["centerName"] = "arras";
 		include("./formReservation.php"); ?>
+		<div>
+			<p class="errorMsg">
+				<?php
+				if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
+					echo $_SESSION["errorMsg"];
+				}
+				?>
+			</p>
+		</div>
 	</main>
 
 	<footer class="mainColorBg mainFont">---</footer>
