@@ -9,13 +9,9 @@ function cleanInput($input)
 
 if (isset($_GET["nameCenter"]) && !empty($_GET["nameCenter"])) {
     $nameCenter = cleanInput($_GET["nameCenter"]);
+    session_start();
+    $_SESSION["centerName"] = $nameCenter;
     $path = "./" . $nameCenter . ".php";
-    if (file_exists($path)) {
-        header("Location: ./$nameCenter.php");
-    } else {
-        session_start();
-        $_SESSION["errorMsg"] = "Aucun centre trouvé";
-        header("Location : ./index.php");
-    }
+    header("Location: ./formReservation.php");
     exit();
 }

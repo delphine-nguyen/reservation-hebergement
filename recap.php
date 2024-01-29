@@ -20,6 +20,10 @@
 
         <section id="recap">
             <article class="mainFont">
+                <p>Centre</p>
+                <p><?php echo $_SESSION["centerName"] ?></p>
+            </article>
+            <article class="mainFont">
                 <p>Nom</p>
                 <p><?php echo $_SESSION["name"]; ?></p>
             </article>
