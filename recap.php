@@ -10,7 +10,7 @@
     <title>Réservation</title>
 </head>
 
-<body class="secondaryCologBg">
+<body class="secondaryColorBg">
     <?php session_start(); ?>
     <header class="mainColorBg">
         <?php include("./header.php"); ?>
@@ -19,35 +19,35 @@
     <main>
 
         <section id="recap">
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Centre</p>
                 <p><?php echo $_SESSION["centerName"] ?></p>
             </article>
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Nom</p>
                 <p><?php echo $_SESSION["name"]; ?></p>
             </article>
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Prénom</p>
                 <p><?php echo $_SESSION["firstname"]; ?></p>
             </article>
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Date de naissance</p>
                 <p><?php echo $_SESSION["birthday"]; ?></p>
             </article>
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Numéro de session de formation</p>
                 <p><?php echo $_SESSION["refSession"]; ?></p>
             </article>
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Date d'arrivée</p>
                 <p><?php echo $_SESSION["arrivalDate"]; ?></p>
             </article>
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Date de départ</p>
                 <p><?php echo $_SESSION["departureDate"]; ?></p>
             </article>
-            <article class="mainFont">
+            <article class="mainFont colorOnSecondaryBg">
                 <p>Type de logement</p>
                 <p><?php echo $_SESSION["typeApt"]; ?></p>
             </article>

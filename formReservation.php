@@ -21,37 +21,37 @@
 	</header>
 	<main>
 		<form action="./bookRoom.php" method="post">
-			<article>
+			<article class="colorOnSecondaryBg">
 				<label for="name" class="mainFont">Nom</label>
 				<input type="text" name="name" class="mainFont" />
 			</article>
 
-			<article>
+			<article class="colorOnSecondaryBg">
 				<label for="firstname" class="mainFont">Prénom</label>
 				<input type="text" name="firstname" class="mainFont" />
 			</article>
 
-			<article>
+			<article class="colorOnSecondaryBg">
 				<label for="birthday" class="mainFont">Date de naissance</label>
 				<input type="date" name="birthday" class="mainFont" />
 			</article>
 
-			<article>
+			<article class="colorOnSecondaryBg">
 				<label for="refSession" class="mainFont">Numéro de session de formation</label>
 				<input type="number" name="refSession" class="mainFont" />
 			</article>
 
-			<article>
+			<article class="colorOnSecondaryBg">
 				<label for="arrivalDate" class="mainFont">Date d'arrivée</label>
 				<input type="date" name="arrivalDate" class="mainFont" />
 			</article>
 
-			<article>
+			<article class="colorOnSecondaryBg">
 				<label for="departureDate" class="mainFont">Date de départ</label>
 				<input type="date" name="departureDate" class="mainFont" />
 			</article>
 
-			<article>
+			<article class="colorOnSecondaryBg">
 				<label for="typeApt" class="mainFont">Type de logement</label>
 				<select name="typeApt" class="mainFont">
 					<option value="Studo avec salle de bain">Studo avec salle de bain</option>
