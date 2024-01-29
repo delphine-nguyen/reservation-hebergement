@@ -1,4 +1,4 @@
-# fake-airbnb
+# reservation-hebergement
 
 Objectif du projet PHP : 
 
