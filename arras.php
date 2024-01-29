@@ -10,17 +10,20 @@
 	<title>Centre d'Arras</title>
 </head>
 
-<body>
-	<header>
+<body class="secondaryColorBg">
+	<header class="mainColorBg">
 		<?php include("./header.php"); ?>
-		<h2>Centre d'Arras</h2>
+		<h2 class="mainFont">Centre d'Arras</h2>
 	</header>
 
 	<main>
-		<?php include("./formReservation.php"); ?>
+		<?php
+		session_start();
+		$_SESSION["centerName"] = "roubaix";
+		include("./formReservation.php"); ?>
 	</main>
 
-	<footer>---</footer>
+	<footer class="mainColorBg mainFont">---</footer>
 </body>
 
 </html>

@@ -11,15 +11,27 @@
 	<title>Centre de Roubaix</title>
 </head>
 
-<body>
-	<header>
+<body class="secondaryColorBg">
+	<header class="mainColorBg">
 		<?php include("./header.php"); ?>
-		<h2>Centre de Roubaix</h2>
+		<h2 class="mainFont">Centre de Roubaix</h2>
 	</header>
 	<main>
-		<?php include("./formReservation.php"); ?>
+		<?php
+		session_start();
+		$_SESSION["centerName"] = "roubaix";
+		include("./formReservation.php"); ?>
+		<div>
+			<p class="errorMsg">
+				<?php
+				if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
+					echo $_SESSION["errorMsg"];
+				}
+				?>
+			</p>
+		</div>
 	</main>
-	<footer>---</footer>
+	<footer class="mainColorBg mainFont">---</footer>
 </body>
 
 </html>
