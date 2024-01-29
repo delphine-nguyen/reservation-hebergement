@@ -106,6 +106,7 @@ if (isset($arrivalDate) && isset($departureDate)) {
 
 if (isset($_POST["refSession"]) && !empty($_POST["refSession"])) {
     $refSession = cleanInput($_POST["refSession"]);
+    $_SESSION["refSession"] = $refSession;
 } else {
     $_SESSION["errorMsg"]  = "Veuillez renseigner le numéro de votre session de formation.";
     header("Location: ./$centerName.php");
@@ -121,7 +122,5 @@ if (isset($_POST["typeApt"]) && !empty($_POST["typeApt"])) {
 }
 
 $_SESSION["refReservation"] = generateRefReservation($name, $firstname);
-
-
-// header("Location: ./recap.php");
-// exit();
+header("Location: ./recap.php");
+exit();
