@@ -14,11 +14,11 @@
     <header class="mainColorBg">
         <?php include("./header.php"); ?>
         <img src="./assets/img/cover.jpeg" alt="AFPA de Roubaix" class="cover">
-        <h1 class="titleCover textOnLightBg mainFont">AFPA</h1>
+        <!-- <h1 class="titleCover textOnLightBg mainFont">AFPA</h1> -->
     </header>
 
     <main>
-        <h2 class="mainFont">Réserver une chambre</h2>
+        <h2 class="mainFont colorOnSecondaryBg">Réserver une chambre</h2>
         <form action="./findCenter.php" method="get" class="searchBarBig">
             <input type="text" name="nameCenter" class="mainFont">
             <button type="submit" class="mainFont">Rechercher</button>
