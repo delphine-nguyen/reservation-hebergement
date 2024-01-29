@@ -32,12 +32,14 @@ function checkAge($birthday)
 function checkDates($arrivalDate, $departureDate)
 {
     $arrivalDate = strtotime($arrivalDate);
-    var_dump($arrivalDate);
+    $currentDate = date("Y-m-d");
+    $currentDate = strtotime($currentDate);
     $departureDate = strtotime($departureDate);
     if ($arrivalDate > $departureDate) {
         return "Veuillez entrer une date de départ postérieure à la date d'arrivée.";
+    } elseif ($arrivalDate < $currentDate) {
+        return "Veuillez entrer une date d'arrivée postérieure à aujourd'hui.";
     }
-    return "";
 }
 
 
