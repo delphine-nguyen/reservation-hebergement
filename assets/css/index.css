@@ -11,12 +11,20 @@ form {
 }
 
 .searchBarBig {
-	padding: 50px;
+	padding: 10px;
+}
+
+/* Main */
+
+main {
+	justify-content: space-between;
 }
 
 /* Img */
 
 .cover {
-	height: 400px;
-	width: 100%;
+	height: 300px;
+	width: 80%;
+
+	border-radius: 20px;
 }
