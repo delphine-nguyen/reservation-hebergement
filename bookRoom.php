@@ -42,14 +42,13 @@ function checkDates($arrivalDate, $departureDate)
 
 
 session_start();
-$centerName = $_SESSION["centerName"];
 
 if (isset($_POST["name"]) && !empty($_POST["name"])) {
     $name = cleanInput($_POST["name"]);
     $_SESSION["name"] = $name;
 } else {
     $_SESSION["errorMsg"] = "Veuillez renseigner votre nom.";
-    header("Location: ./$centerName.php");
+    header("Location: ./formReservation.php");
     exit();
 }
 
@@ -58,7 +57,7 @@ if (isset($_POST["firstname"]) && !empty($_POST["firstname"])) {
     $_SESSION["firstname"] = $firstname;
 } else {
     $_SESSION["errorMsg"]  = "Veuillez renseigner votre prénom.";
-    header("Location: ./$centerName.php");
+    header("Location: ./formReservation.php");
     exit();
 }
 
@@ -68,12 +67,12 @@ if (isset($_POST["birthday"]) && !empty($_POST["birthday"])) {
     $errorMsg = checkAge($birthday);
     if ($errorMsg != "") {
         $_SESSION["errorMsg"] = $errorMsg;
-        header("Location: ./$centerName.php");
+        header("Location: ./formReservation.php");
         exit();
     }
 } else {
     $_SESSION["errorMsg"]  = "Veuillez renseigner votre date de naissance";
-    header("Location: ./$centerName.php");
+    header("Location: ./formReservation.php");
     exit();
 }
 
@@ -82,7 +81,7 @@ if (isset($_POST["arrivalDate"]) && !empty($_POST["arrivalDate"])) {
     $_SESSION["arrivalDate"] = $arrivalDate;
 } else {
     $_SESSION["errorMsg"]  = "Veuillez renseigner la date d'arrivée.";
-    header("Location: ./$centerName.php");
+    header("Location: ./formReservation.php");
     exit();
 }
 
@@ -91,7 +90,7 @@ if (isset($_POST["departureDate"]) && !empty($_POST["departureDate"])) {
     $_SESSION["departureDate"] = $departureDate;
 } else {
     $_SESSION["errorMsg"]  = "Veuillez renseigner la date de départ.";
-    header("Location: ./$centerName.php");
+    header("Location: ./formReservation.php");
     exit();
 }
 
@@ -99,7 +98,7 @@ if (isset($arrivalDate) && isset($departureDate)) {
     $errorMsg = checkDates($arrivalDate, $departureDate);
     if ($errorMsg != "") {
         $_SESSION["errorMsg"] = $errorMsg;
-        header("Location: ./$centerName.php");
+        header("Location: ./formReservation.php");
         exit();
     }
 }
@@ -109,7 +108,7 @@ if (isset($_POST["refSession"]) && !empty($_POST["refSession"])) {
     $_SESSION["refSession"] = $refSession;
 } else {
     $_SESSION["errorMsg"]  = "Veuillez renseigner le numéro de votre session de formation.";
-    header("Location: ./$centerName.php");
+    header("Location: ./formReservation.php");
     exit();
 }
 
@@ -117,7 +116,7 @@ if (isset($_POST["typeApt"]) && !empty($_POST["typeApt"])) {
     $_SESSION["typeApt"] = cleanInput($_POST["typeApt"]);
 } else {
     $_SESSION["errorMsg"]  = "Veuillez renseigner le type de logement que vous souhaitez.";
-    header("Location: ./$centerName.php");
+    header("Location: ./formReservation.php");
     exit();
 }
 
