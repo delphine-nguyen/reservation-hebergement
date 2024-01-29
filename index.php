@@ -13,11 +13,10 @@
 <body class="secondaryColorBg">
     <header class="mainColorBg">
         <?php include("./header.php"); ?>
-        <img src="./assets/img/cover.jpeg" alt="AFPA de Roubaix" class="cover">
-        <!-- <h1 class="titleCover textOnLightBg mainFont">AFPA</h1> -->
     </header>
 
     <main>
+        <img src="./assets/img/cover.jpeg" alt="AFPA de Roubaix" class="cover">
         <h2 class="mainFont colorOnSecondaryBg">Réserver une chambre</h2>
         <form action="./findCenter.php" method="get" class="searchBarBig">
             <input type="text" name="nameCenter" class="mainFont">
@@ -29,7 +28,6 @@
             if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
                 echo "<p class='mainFont'>" . $_SESSION["errorMsg"] . "</p>";
             }
-            session_destroy();
             ?>
         </section>
     </main>
