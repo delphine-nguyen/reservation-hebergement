@@ -10,30 +10,30 @@
     <title>Réservation</title>
 </head>
 
-<body>
-    <header>
+<body class="secondaryColorBg">
+    <header class="mainColorBg">
         <?php include("./header.php"); ?>
         <img src="./assets/img/cover.jpeg" alt="AFPA de Roubaix" class="cover">
-        <h1 class="titleCover textOnLightBg">AFPA</h1>
+        <h1 class="titleCover textOnLightBg mainFont">AFPA</h1>
     </header>
 
     <main>
-        <h2>Réserver une chambre</h2>
+        <h2 class="mainFont">Réserver une chambre</h2>
         <form action="./findCenter.php" method="get" class="searchBarBig">
-            <input type="text" name="nameCenter">
-            <button type="submit">Rechercher</button>
+            <input type="text" name="nameCenter" class="mainFont">
+            <button type="submit" class="mainFont">Rechercher</button>
         </form>
         <section class="errorMsg">
             <?php
             session_start();
             if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
-                echo "<p>" . $_SESSION["errorMsg"] . "</p>";
+                echo "<p class='mainFont'>" . $_SESSION["errorMsg"] . "</p>";
             }
             session_destroy();
             ?>
         </section>
     </main>
-    <footer>---</footer>
+    <footer class="mainColorBg mainFont">---</footer>
 </body>
 
 </html>
