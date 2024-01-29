@@ -8,10 +8,15 @@ function cleanInput($input)
 }
 
 if (isset($_GET["nameCenter"]) && !empty($_GET["nameCenter"])) {
-    $nameCenter = cleanInput($_GET["nameCenter"]);
+    $nameCenter = ucfirst(cleanInput($_GET["nameCenter"]));
     session_start();
     $_SESSION["centerName"] = $nameCenter;
-    $path = "./" . $nameCenter . ".php";
-    header("Location: ./formReservation.php");
-    exit();
+
+    if ($nameCenter == "") {
+        header("Location: ./index.php");
+        exit();
+    } else {
+        header("Location: ./formReservation.php");
+        exit();
+    }
 }
