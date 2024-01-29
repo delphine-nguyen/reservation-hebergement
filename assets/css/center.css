@@ -1,5 +1,5 @@
-input,
-label {
+article > input,
+article > label {
 	display: block;
 	margin: 5px;
 }
