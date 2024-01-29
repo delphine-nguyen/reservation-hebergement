@@ -1,0 +1,62 @@
+/* Nav */
+
+header > nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: rgb(44, 44, 44);
+
+	padding: 5px;
+
+	position: sticky;
+	top: 0;
+}
+
+/* Body & Main */
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100vh;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 60vw;
+	margin: 50px auto;
+}
+
+/* Titles */
+
+h1 {
+	font-size: 100px;
+	text-align: center;
+
+	padding: 20px;
+}
+
+/* Img */
+
+.logoSmall {
+	width: 30px;
+	height: 30px;
+}
+
+/* Footer */
+
+footer {
+	background-color: rgb(44, 44, 44);
+	margin-top: auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 5px;
+}
