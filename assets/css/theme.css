@@ -88,7 +88,7 @@ footer {
 }
 
 .secondaryColorBg {
-	background-color: rgb(21, 21, 21);
+	background-color: rgb(227, 227, 227);
 }
 
 .errorMsg {
@@ -96,7 +96,7 @@ footer {
 }
 
 .colorOnSecondaryBg {
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 /* Fonts */
