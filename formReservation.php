@@ -71,6 +71,7 @@
 				if (isset($_SESSION["errorMsg"]) && !empty($_SESSION["errorMsg"])) {
 					echo $_SESSION["errorMsg"];
 				}
+				$_SESSION["errorMsg"] = "";
 				?>
 			</p>
 		</div>
